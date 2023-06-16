@@ -4,11 +4,10 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="css/aos.css">
-    <link rel="stylesheet" href="css/swiper-bundle.min.css">
-    <link rel="stylesheet" href="css/main.css">
-    <link rel="stylesheet" href="css/responsive.css">
-    <title>project 24</title>
+    <link rel="stylesheet" href="css/utils/swiper-bundle.min.css">
+    <link rel="stylesheet" href="css/main.min.css">
+    <link rel="icon" type="image/png" href="https://demos.pishtaz-web.com/ostadsho/wp-content/uploads/2022/11/cropped-osfavicon-32x32.png">
+    <title>پوسته آموزشی استاد شو</title>
 </head>
 <body>
 
@@ -98,16 +97,17 @@
             </div>
     
             <div class="container">
+
                 <nav class="navbar fi-sb">
 
                     <button class="btn open__navbar__menu__btn fi">
                         <svg><use xlink:href="#bars"></use></svg>
                     </button>
-
+                
                     <div class="navbar-logo-wrapper">
                         <img src="image/logo.png" alt="logo" class="navbar__logo logo">
                     </div>
-    
+                
                     <div class="navbar-menu fi">
                         <div class="navbar-logo-btn-wrapper fi-sb">
                             <div class="navbar-logo-wrapper">
@@ -130,7 +130,7 @@
                             </li>
                             <li class="navbar__menu__item">ووکامرس<svg><use xlink:href="#arrowDown"></use></svg>
                                 <ul class="navbar-sub-menu">
-                                    <li class="navbar__sub__menu__item"><a href="#">فروشگاه</a></li>
+                                    <li class="navbar__sub__menu__item"><a href="/shop.html">فروشگاه</a></li>
                                     <li class="navbar__sub__menu__item"><a href="#">سبد خرید</a></li>
                                     <li class="navbar__sub__menu__item"><a href="#">حساب کاربری من</a></li>
                                 </ul>
@@ -149,11 +149,11 @@
                                 </ul>
                             </li>
                         </ul>
-                        <button class="btn fi navbar__darkmode__btn" id="darkModeBtn">
+                        <button class="btn fi navbar__darkmode__btn darkModeBtn">
                             <div class="dark__mode__point"></div>
                         </button>
                     </div>
-    
+                
                     <div class="navbar-actions fi">
                         <button class="btn fi navbar__search__btn">
                             <svg><use xlink:href="#search"></use></svg>
@@ -161,7 +161,7 @@
                         <button class="btn fi navbar__shop__basket__btn">
                             <svg><use xlink:href="#basket"></use></svg>
                         </button>
-                        <button class="btn fi navbar__darkmode__btn" id="darkModeBtn">
+                        <button class="btn fi navbar__darkmode__btn darkModeBtn">
                             <div class="dark__mode__point"></div>
                         </button>
                         <button class="btn fi login__register__btn">
@@ -169,10 +169,10 @@
                             ورود / عضویت
                         </button>
                     </div>
-    
+                
                 </nav>
     
-                <section class="header-content fi" data-aos="fade-up" data-aos-once="true">
+                <section class="header-content fi">
                     <h1 class="header__main__title">پوسته آموزشی استاد شو</h1>
                     <h2 class="header__main__subtitle">حرفه ای ترین پوسته آموزش آنلاین وردپرس</h2>
                     <div class="header-search-box">
@@ -230,7 +230,7 @@
     
         <main class="main-sections">
             <div class="container">
-                <section class="grouping-courses" data-aos="fade-up" data-aos-duration="400">
+                <section class="grouping-courses">
                     <div class="section-header fi">
                         <h3 class="section__header__title">دسته بندی دوره های آموزشـی</h3>
                         <h3 class="section__header__subtitle">دوره های فراوان در دسته بندی های مختلف</h3>
@@ -273,7 +273,7 @@
                     </div>
                 </section>
     
-                <section class="lastest-courses" data-aos="fade-up" data-aos-duration="400" data-aos-offset="300">
+                <section class="lastest-courses">
                     <div class="lastest-courses-header fi-sb">
                         <div class="lastest-courses-header-title-wrapper fi">
                             <div class="lastest__courses__header__title__icon fi">
@@ -377,7 +377,7 @@
                     <path d="M1440 0C888.234 44.7328 572.91 44.6813 0 0V64H1440V0Z" fill="#52AC66"></path>
                 </svg>
     
-                <div class="content-section fi-sb">
+                <div class="content-section container fi-sb">
                     <div class="content-title-wrapper fi">
                         <svg width="32" height="46" viewBox="0 0 52 46" fill="none" xmlns="http://www.w3.org/2000/svg">
                             <path d="M42.9388 13.4342H39.1576V9.40569C39.1576 7.09717 38.2891 4.89804 36.7119 3.21362C36.4187 2.9004 35.9271 2.88436 35.6141 3.17757C35.301 3.47078 35.2848 3.96224 35.5781 4.27526C36.8847 5.67083 37.6043 7.49286 37.6043 9.40569V13.4342H21.8C16.8036 13.4342 12.7388 17.4991 12.7388 22.4955V25.274H11.5223C11.0383 25.274 10.5832 25.4625 10.2409 25.8048L6.11863 29.927V25.7802C6.11863 25.1449 5.7785 24.5479 5.23077 24.2223C2.96248 22.8737 1.5533 20.3998 1.5533 17.7662V9.40569C1.5533 5.2658 4.92131 1.89778 9.0612 1.89778H30.0964C31.0668 1.89778 32.0106 2.07988 32.9017 2.43921C33.2995 2.59937 33.7521 2.40701 33.9124 2.00929C34.0728 1.61147 33.8803 1.15891 33.4825 0.998545C32.4061 0.564467 31.2667 0.344482 30.0964 0.344482H9.0612C4.06484 0.344482 0 4.40932 0 9.40569V17.7662C0 20.9449 1.70016 23.9303 4.43696 25.5575C4.51618 25.6046 4.56534 25.6899 4.56534 25.7803V30.3021C4.56534 30.8695 4.90405 31.3764 5.42831 31.5936C5.7782 31.7618 6.49259 31.7376 6.95185 31.2907L11.3391 26.9033C11.3881 26.8543 11.4531 26.8274 11.5223 26.8274H12.7388V30.8559C12.7388 32.0789 12.9785 33.2657 13.4511 34.3833C13.6182 34.7782 14.0739 34.9628 14.469 34.796C14.8641 34.6289 15.0488 34.1732 14.8819 33.7781C14.4906 32.8531 14.2922 31.87 14.2922 30.856V22.4956C14.2922 18.3556 17.6602 14.9876 21.8001 14.9876H42.9388C47.0787 14.9876 50.4467 18.3556 50.4467 22.4956V30.856C50.4467 33.4999 49.0948 35.8996 46.8303 37.2754C46.2966 37.5996 45.965 38.1914 45.965 38.8197V43.8852L40.9744 38.8946C40.6321 38.5523 40.177 38.3638 39.693 38.3638H21.8C19.9159 38.3638 18.1143 37.663 16.7268 36.3906C16.4108 36.1009 15.9195 36.122 15.6295 36.4381C15.3395 36.7542 15.3607 37.2455 15.6769 37.5355C17.3515 39.0714 19.526 39.9172 21.7999 39.9172H39.6928C39.7609 39.9172 39.8276 39.9448 39.8758 39.9931L45.1315 45.2488C45.5374 45.5607 45.9341 45.8018 46.655 45.5518C47.1792 45.3345 47.5179 44.8276 47.5179 44.2602V38.8196C47.5179 38.7303 47.5634 38.6472 47.6366 38.6028C50.3689 36.9429 52 34.047 52 30.8559V22.4955C52 17.4991 47.9352 13.4342 42.9388 13.4342V13.4342Z" fill="white"></path>
@@ -458,8 +458,8 @@
         </footer>
     </div>
     
-    <script src="js/aos.js"></script>
-    <script src="js/swiper-bundle.min.js"></script>
+    <script src="js/utils/swiper-bundle.min.js"></script>
+    <script src="js/global.js"></script>
     <script type="module" src="js/app.js"></script>
 </body>
 </html>
