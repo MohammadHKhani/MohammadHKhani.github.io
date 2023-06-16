@@ -1,0 +1,44 @@
+:root {
+    --white-color: #fff;
+    --green-low: #52AC66;
+    --green-very-low: #52AC661F;
+    --text-color-main: #4b515a;
+    --text-color-second: #868686;
+}
+
+*, *::before, *::after {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+svg {
+    width: 20px;
+    height: 20px;
+    vertical-align: middle;
+    border-style: none;
+    overflow: hidden;
+    height: auto;
+}
+
+svg symbol {
+    height: 1rem;
+}
+
+::-webkit-scrollbar {
+    width: 10px; /* Width of the scrollbar */
+}
+  
+::-webkit-scrollbar-track {
+    background: #f1f1f1; /* Track color */
+}
+  
+::-webkit-scrollbar-thumb {
+    background: #bcc7cd; /* Thumb color */
+    border-radius: 5px; /* Rounded corners */
+    -webkit-transition: all .2s ease-in;
+}
+  
+::-webkit-scrollbar-thumb:hover {
+    background: #919ca1; /* Hover color */
+}

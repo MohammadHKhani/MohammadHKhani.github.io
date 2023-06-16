@@ -1,0 +1,330 @@
+/* --------------------------- navbar Start Styling --------------------------- */
+
+.navbar {
+    width: 100%;
+    height: 8rem;
+    position: relative;
+}
+
+.navbar .open__navbar__menu__btn, .navbar > .navbar-logo-wrapper, .close__navbar__menu {
+    display: none;
+}
+
+.navbar > .navbar-logo-wrapper {
+    position: absolute;
+    left: 0;
+    right: 0;
+    margin: auto;
+}
+
+.open__navbar__menu__btn, .close__navbar__menu {
+    width: 3rem;
+    height: 3rem;
+    background-color: var(--green-very-low);
+    border-radius: .5rem;
+}
+
+.navbar-logo-btn-wrapper {
+    width: 100%;
+}
+
+.open__navbar__menu__btn svg, .close__navbar__menu svg {
+    width: 25px;
+    fill: var(--green-low);
+}
+
+.navbar-menu {
+    gap: 2.5rem;
+}
+
+.navbar-logo-wrapper {
+    width: 150px;
+    cursor: pointer;
+}
+
+.navbar__logo {
+    width: 100%;
+    transition: all .3s;
+}
+
+.navbar__logo:hover {
+    transform: scale(1.2);
+}
+
+.navbar-main-menu {
+    gap: .5rem;
+    list-style: none;
+}
+
+.navbar-menu .navbar__darkmode__btn {
+    display: none;
+}
+
+.navbar__menu__item {
+    font-family: 'iyekan light', sans-serif;
+    color: var(--text-color-main);
+    font-size: 0.875rem;
+    display: flex;
+    align-items: center;
+    gap: .2rem;
+    cursor: pointer;
+    height: 3rem;
+    padding: 1rem;
+    border-radius: 10px;
+    transition: all .3s;
+    position: relative;
+}
+
+.navbar__menu__item svg {
+    width: 15px;
+    height: 15px;
+    transition: all .3s;
+}
+
+.navbar__menu__item:not(.navbar__sub__menu__item):hover {
+    background-color: #52AC661F;
+    color: #52AC66;
+}
+
+.navbar__menu__item:hover svg {
+    transform: rotate(180deg);
+}
+
+.navbar-sub-menu {
+    visibility: hidden;
+    opacity: 0;
+    transform: translateY(50%);
+    position: absolute;
+    right: 0;
+    top: 55px;
+    background-color: var(--white-color);
+    border-top: 3px solid #52AC66;
+    width: 12rem;
+    list-style: none;
+    padding: .5rem;
+    border-radius: 10px;
+    box-shadow: 0 5px 25px rgba(0, 0, 0, 0.1);
+    color: var(--text-color-main) !important;
+    transition: all .3s ease-in-out;
+    z-index: 3;
+}
+
+.navbar__menu__item:hover .navbar-sub-menu {
+    visibility: visible;
+    opacity: 1;
+    transform: translateY(0);
+}
+
+.navbar-sub-menu--active {
+    visibility: visible;
+    opacity: 1;
+}
+
+.navbar__sub__menu__item {
+    font-family: 'iyekan light', sans-serif;
+    margin: .25rem 0;
+    padding: 1rem;
+    border-radius: 10px;
+    transition: all .3s;
+}
+
+.navbar__sub__menu__item:hover {
+    background-color: #52AC661F;
+    color: #52AC66;
+}
+
+.navbar__menu__item svg {
+    width: 0.875rem;
+}
+
+.navbar-actions {
+    gap: .5rem;
+}
+
+.navbar__search__btn, .navbar__shop__basket__btn {
+    width: 3.25rem;
+    height: 3.25rem;
+    border-radius: 50%;
+    color: #52AC66;
+    background-color: #52AC661F;
+    transition: all .3s;
+}
+
+.navbar__search__btn svg, .navbar__shop__basket__btn svg {
+    width: 22px;
+    height: 22px;
+}
+
+.navbar__search__btn:hover, .navbar__shop__basket__btn:hover {
+    background-color: #52AC66;
+    color: var(--white-color);
+}
+
+.navbar__darkmode__btn {
+    width: 4rem;
+    height: 2rem;
+    background-color: #CCCCCC;
+    border-radius: 2rem;
+    position: relative;
+    transition: all .3s;
+}
+
+.dark__mode__point {
+    position: absolute;
+    left: 4px;
+    top: 0;
+    bottom: 0;
+    margin: auto;
+    width: 1.5rem;
+    height: 1.5rem;
+    background-color: white;
+    border-radius: 50%;
+    transition: all .3s;
+}
+
+.navbar__darkmode__btn.active-dark-mode {
+    background-color: #52AC66;
+}
+
+.navbar__darkmode__btn.active-dark-mode .dark__mode__point {
+    left: calc(100% - 1.5rem - 4px);
+}
+
+.login__register__btn {
+    font-family: 'iyekan regular', sans-serif;
+    background-color: #52AC66;
+    color: #fff;
+    width: 10rem;
+    height: 3rem;
+    padding: .5rem;
+    border-radius: 5rem;
+    gap: .5rem;
+    transition: all .3s;
+}
+
+.login__register__btn:hover {
+    background-color: #327942;
+}
+
+.login__register__btn svg {
+    height: 1rem;
+}
+
+/* --------------------------- navbar End Styling --------------------------- */
+
+@media only screen and (max-width: 1200px) {
+    .container {
+        max-width: 1200px;
+    }
+
+    .navbar {
+        position: fixed;
+        top: 0;
+        left: 0;
+        right: 0;
+        height: 6rem;
+        padding: .5rem 1rem;
+        background-color: var(--white-color);
+        box-shadow: 0 5px 25px rgba(0, 0, 0, 0.1);
+        z-index: 10;
+    }
+
+    .navbar-menu {
+        position: fixed;
+        right: -100%;
+        top: 0;
+        bottom: 0;
+        width: 18rem;
+        padding: 1rem;
+        background-color: var(--white-color);
+        flex-direction: column;
+        justify-content: flex-start;
+        box-shadow: -5px 0 25px rgba(0, 0, 0, 0.15);
+        transition: all .5s;
+    }
+
+    .navbar-menu.active-navbar {
+        right: 0;
+    }
+
+    .navbar__search__btn, .navbar__shop__basket__btn, .navbar-actions .navbar__darkmode__btn {
+        display: none;
+    }
+
+    .navbar .open__navbar__menu__btn, .navbar > .navbar-logo-wrapper, .close__navbar__menu {
+        display: flex;
+    }
+
+    .login__register__btn {
+        border-radius: 10px;
+        background-color: var(--green-very-low);
+        color: var(--green-low);
+    }
+    
+    .login__register__btn:hover {
+        background-color: var(--green-low);
+        color: #fff;
+    }
+
+    .navbar-main-menu {
+        flex-direction: column;
+        width: 100%;
+    }
+
+    .navbar__menu__item {
+        width: 100%;
+        justify-content: space-between;
+        border-bottom: 1px solid #6b6C771A;
+    }
+
+    .navbar__menu__item:hover svg {
+        transform: rotate(0);
+    }
+
+    .navbar__menu__item svg {
+        background-color: var(--green-very-low);
+        width: 20px;
+        height: 20px;
+        padding: .2rem;
+        border-radius: 50%;
+        color: var(--green-low);
+    }
+
+    .navbar-menu .navbar__darkmode__btn {
+        display: flex;
+        align-self: flex-end;
+    }
+
+    .navbar-sub-menu {
+        flex-direction: column;
+        width: 100%;
+        transform: translateY(0);
+        top: 100%;
+        border: none;
+    }
+
+    .navbar__sub__menu__item {
+        border-bottom: 1px solid #6b6C771A;
+    }
+
+}
+
+@media only screen and (max-width: 992px) {
+    .container {
+        max-width: 992px;
+    }
+}
+
+@media only screen and (max-width: 576px) {
+    .container {
+        max-width: 100%;
+    }
+
+    html {
+        font-size: 66.6%;
+    }
+
+    .navbar__logo {
+        width: 70%;
+    }
+}

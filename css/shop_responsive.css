@@ -1,0 +1,84 @@
+@media only screen and (max-width: 1400px) {
+    .filter-action-item {
+        width: 11rem;
+    }
+}
+
+@media only screen and (max-width: 1200px) {
+    .container {
+        max-width: 1200px;
+    }
+
+    body {
+        padding-top: 6rem;
+    }
+
+    .filter-action {
+        flex-direction: column;
+        gap: 2rem;
+    }
+
+    .courses {
+        flex-direction: column-reverse;
+    }
+
+    .courses-side {
+        margin-bottom: 5rem;
+        flex-direction: row;
+        width: 100%;
+    }
+
+    .courses-wrapper {
+        width: 100%;
+    }
+}
+
+@media only screen and (max-width: 992px) {
+    .container {
+        max-width: 992px;
+    }
+
+    .filter-action-items-wrapper {
+        flex-wrap: wrap;
+    }
+    
+}
+
+@media only screen and (max-width: 768px) {
+    .header-body--wrapper {
+        flex-direction: column;
+    }
+
+    .header-body {
+        padding: 1rem 0;
+    }
+
+    .header-text {
+        align-items: center;
+    }
+}
+
+@media only screen and (max-width: 576px) {
+    .container {
+        max-width: 100%;
+    }
+
+    html {
+        font-size: 66.6%;
+    }
+
+    .filter-action-item svg, .filter-action-head-wrapper svg {
+        width: 30px;
+        height: 30px;
+    }
+
+    .courses-container {
+        gap: 6rem 1rem;
+    }
+}
+
+@media only screen and (max-width: 480px) {
+    .courses-side {
+        flex-direction: column;
+    }
+}
